@@ -1,0 +1,61 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 120px 24px 160px 24px;
+    pointer-events: none;
+  }
+
+@media screen and (max-width: 640px) {
+    .main {
+      padding: 0;
+    }
+  }
+
+/* styled */
+.app {
+    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  }
+
+.nav-text{
+    @apply text-lg text-primary-blue font-medium
+}
+
+.blue-btn {
+    @apply rounded-full border border-primary-blue bg-primary-blue py-3 px-7 text-white transition-all hover:bg-white hover:text-primary-blue text-center text-lg font-inter items-center justify-center;
+  }
+
+.dropdown {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-primary-blue min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  }
+  
+.dropdown_link {
+    @apply text-sm font-inter text-white font-medium py-2;
+  }
+
+.flex-between {
+    @apply flex justify-between items-center;
+  }
+
+.logo_text {
+    @apply max-sm:hidden font-satoshi font-semibold text-lg text-primary-blue tracking-wide;
+  }
+
+.flex-center {
+    @apply justify-center items-center;
+  }
+
+.line {
+    @apply w-full h-1 bg-primary-blue rounded-xl mt-1 scale-0 origin-bottom transition-all
+}
+  
+
+
