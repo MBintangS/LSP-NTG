@@ -17,7 +17,7 @@ const Home = () => {
               alt="PNJLogo"
               width={256}
               height={256}
-              className="m-auto"
+              className="m-auto -z-10"
             >
             </Image>
               <div className="circle"/>
