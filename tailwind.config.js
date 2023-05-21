@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        poppins: ['poppins', 'sans-serif'],
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
         'primary-blue': '#008797',
+        'secondary-gray': '#848484',
       }
     },
   },
