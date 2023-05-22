@@ -100,3 +100,23 @@
   @apply font-medium lg:text-xl text-secondary-gray text-base px-6
 }
 
+.txt-blue {
+  @apply text-primary-blue text-xl md:text-3xl font-semibold pb-4 px-6
+}
+
+
+.container-pencapaian{
+  @apply md:w-9/12 bg-primary-blue mx-auto w-6/12 grid lg:grid-cols-4 rounded-3xl grid-cols-1 text-center md:grid-cols-2 shadow-2xl mb-8 
+}
+
+.circle-pencapaian{
+  @apply w-48 h-48 bg-secondary-blue border-8 rounded-full m-auto my-5 border-cirlce-border
+}
+
+/* .container-anggota {
+  @apply bg-tertiary-bg-blue
+} */
+
+.card-asesor {
+  @apply w-300 h-400 bg-white shadow-2xl rounded-3xl mb-8
+}

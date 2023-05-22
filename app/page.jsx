@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Pencapaian from "@components/Pencapaian";
+import CaraouselAnggota from "@components/CaraouselAnggota";
 
 const Home = () => {
   return (
@@ -80,7 +82,7 @@ const Home = () => {
 
         {/* kanan */}
         <div className="flex-col flex my-auto ">
-          <h1 className="text-primary-blue text-xl md:text-4xl font-semibold pb-4 px-6">SKEMA SERTIFIKASI</h1>
+          <h1 className="txt-blue">SKEMA SERTIFIKASI</h1>
           <div className="txt-skema">
             <p>SKEMA SERTIFIKASI LSP PPM PNJ</p><br />
             <p>Skema kompetensi yang kami sediakan pada sertifikasi profesi di LSP PPM PNJ.</p><br />
@@ -92,9 +94,20 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
       {/* Skema Sertifikasi End */}
+
+
+      <Pencapaian />
+
+      {/* Anggota Tim Asesor Start */}
+
+      <div className="container-anggota text-center">
+        <h1 className="txt-blue w-96 mx-auto mt-20">Anggota Tim Asesor LSP PNJ</h1>
+        <p className="font-medium text-secondary-gray text-base px-6 w-450 lg:w-598 mx-auto mb-10">Tim kami terdiri dari Asesor Profesional yang terdiri dari Profesor, Doktor dan Tenaga Ahli pada bidangnya.</p>
+      </div>
+      <CaraouselAnggota />
+      {/* Anggota Tim Asesor End */}
+
     </section>
   );
 };
