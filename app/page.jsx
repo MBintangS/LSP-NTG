@@ -108,6 +108,11 @@ const Home = () => {
       <CaraouselAnggota />
       {/* Anggota Tim Asesor End */}
 
+      <div className="grid grid-col flex-center text-2xl my-10 py-20 rounded-3xl bg-white shadow-2xl" >
+        <div className="text-primary-blue mb-5">Hubungi Kami di 022-62111111 dan dapatkan layanan sertifikasi dari kami.</div>
+        <button className="blue-btn w-64 mx-auto">Hubungi Kami</button>
+      </div>
+
     </section>
   );
 };
