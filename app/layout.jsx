@@ -14,7 +14,7 @@ const RootLayout = ({ children }) => {
       <head>
         <link rel="icon" href="/assets/images/Logo.svg" />
       </head>
-      <body>
+      <body style={{backgroundColor:"#EFF5F5"}}>
         <main className="main">
         <Nav />
           {children}

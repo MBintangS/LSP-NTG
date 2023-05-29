@@ -12,6 +12,7 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
   }
 
 @media screen and (max-width: 640px) {
@@ -26,11 +27,11 @@
   }
 
 .nav-text{
-    @apply text-lg text-primary-blue font-medium
+    @apply text-base text-primary-blue font-medium
 }
 
 .navbar {
-  @apply flex-between mb-4 mt-3 py-2 md:max-w-7xl md:w-full px-5 fixed w-full bg-transparent rounded-3xl transition-all
+  @apply flex-between mb-4 mt-3 py-2 md:max-w-7xl md:w-full px-5 fixed w-full bg-transparent rounded-3xl transition-all z-10
 }
 
 .navbar-bg {
@@ -85,7 +86,7 @@
 }
 
 .btn-hero {
-  @apply md:px-12 md:py-4 bg-primary-blue text-white rounded-full mt-10 hover:bg-transparent border border-primary-blue hover:text-primary-blue transition-all px-6 py-2 w-64 mx-auto
+  @apply md:px-12 md:py-4 bg-primary-blue text-white rounded-full mt-10 hover:bg-transparent border border-primary-blue hover:text-primary-blue transition-all px-6 py-2 md:w-[280px] mx-auto w-[220px]
 }
 
 .line-hero {
@@ -101,7 +102,7 @@
 }
 
 .txt-blue {
-  @apply text-primary-blue text-xl md:text-3xl font-semibold pb-4 px-6
+  @apply text-primary-blue text-xl md:text-3xl font-semibold pb-4 px-6 md:w-full w-[500px] mx-auto
 }
 
 
@@ -118,5 +119,13 @@
 } */
 
 .card-asesor {
-  @apply w-300 h-400 bg-white shadow-2xl rounded-3xl mb-8
+  @apply w-300 h-400 bg-white shadow-lg rounded-3xl mb-8
+}
+
+.red-btn {
+  @apply rounded-full border border-red-600 bg-red-600 py-3 px-7 text-white transition-all hover:bg-white hover:text-red-600 text-center text-lg font-inter items-center justify-center;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms ;
 }

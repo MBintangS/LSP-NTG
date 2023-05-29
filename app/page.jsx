@@ -3,6 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Pencapaian from "@components/Pencapaian";
 import CaraouselAnggota from "@components/CaraouselAnggota";
+import Faq from "@components/faq/Faq";
+import {AiOutlineArrowRight, AiOutlinePhone} from 'react-icons/ai'
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
   return (
@@ -38,7 +43,12 @@ const Home = () => {
           <div className="line-hero"/>
           <div className="text-primary-blue text-xl md:text-4xl font-semibold">LEMBAGA SERTIFIKASI PROFESI</div>
           <div className="md:text-4xl text-xl font-semibold text-gray-500">POLITEKNIK NEGERI JAKARTA</div>
-          <div className="btn-hero"><Link href="/">DAFTAR SEKARANG</Link></div>
+          <div className="btn-hero ">
+            <Link href="/" className="inline-flex items-center justify-between w-full">
+              <p>DAFTAR SEKARANG</p> 
+              <AiOutlineArrowRight />
+            </Link>
+            </div>
           <div className="line-hero"/>
         </div>
 
@@ -108,10 +118,24 @@ const Home = () => {
       <CaraouselAnggota />
       {/* Anggota Tim Asesor End */}
 
-      <div className="grid grid-col flex-center text-2xl my-10 py-20 rounded-3xl bg-white shadow-2xl" >
-        <div className="text-primary-blue mb-5">Hubungi Kami di 022-62111111 dan dapatkan layanan sertifikasi dari kami.</div>
-        <button className="blue-btn w-64 mx-auto">Hubungi Kami</button>
+      {/* Hubungi Kami Start */}
+      <div className="grid grid-col flex-center lg:text-2xl text-lg my-5 py-5 md:my-10 md:py-20 rounded-3xl bg-white shadow-2xl md:w-[1000px] w-[500px] mx-auto " >
+        <div className="text-primary-blue mb-5 p-6 text-center">Hubungi Kami di <span className="text-red-600 font-bold">022-62111111</span> dan dapatkan layanan sertifikasi dari kami.</div>
+        <button className="red-btn w-64 mx-auto">
+          <div className="w-full mx-auto inline-flex justify-around items-center ">
+            <p>Hubungi Kami</p>  
+            <AiOutlinePhone /> 
+          </div>
+        </button>
       </div>
+
+      {/* Hubungi Kami Start */}
+
+      {/* FAQ Start */}
+
+      <Faq />
+
+      {/* FAQ End */}
 
     </section>
   );
