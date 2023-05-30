@@ -14,24 +14,24 @@ export const testimonialData = [
     {
         desc: `"Asesi di LSP PNJ memberikan pengalaman yang sangat berharga dan profesional. Saya merekomendasikan LSP PNJ kepada siapa saja yang ingin memperoleh sertifikasi yang diakui secara nasional."`,
         asesi: "- Rina Asesi 2023",
-        foto: "/assets/images/asesor.jpg"
+        foto: "/assets/images/asesor2.jpg"
     },
     {
         desc: `“LSP PNJ memberikan pengalaman profesional dan efisien. Saya merekomendasikan LSP PNJ kepada siapa saja yang ingin mendapatkan sertifikasi yang diakui secara nasional.”.`,
         asesi: "- Rina Asesi 2023",
-        foto: "/assets/images/asesor.jpg"
+        foto: "/assets/images/asesor3.jpg"
     },
 ]
 
 const Testimonial = ({desc, asesi, foto}) => {
   return (
-    <div className="w-[360px]">
-      <div className="relative w-[327px] h-[418px] bg-white rounded-xl shadow-2xl hover:rotate-1">
-        <p className="p-6">
-          <LuQuote className="text-4xl" /> <br />
+    <div className="w-[360px] cursor-pointer mb-24">
+      <div className="relative w-[300px] h-[380px] bg-white rounded-xl shadow-2xl hover:rotate-1">
+        <p className="p-6 text-base">
+          <LuQuote className="text-4xl mb-2" />
           {desc}
         </p>
-        <h1 className="p-6">{asesi}</h1>
+        <h1 className="px-6 py-2">{asesi}</h1>
 
         <Image
           src={foto}

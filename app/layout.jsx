@@ -2,6 +2,7 @@ import "@styles/globals.css";
 
 import Nav from "@components/Nav";
 import Footer from "@components/footer/Footer";
+import NavBar from "@components/NavBar";
 
 export const metadata = {
   title: "LSP - POLITEKNIK NEGERI JAKARTA",
@@ -15,8 +16,9 @@ const RootLayout = ({ children }) => {
         <link rel="icon" href="/assets/images/Logo.svg" />
       </head>
       <body style={{backgroundColor:"#EFF5F5"}}>
+        {/* <Nav /> */}
+        <NavBar />
         <main className="main">
-        <Nav />
           {children}
         </main>
         <Footer />

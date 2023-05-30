@@ -9,7 +9,7 @@
   }
 
 .main {
-  max-width: 1280px;
+  max-width: 100vw;
   margin-left: auto;
   margin-right: auto;
 
@@ -39,14 +39,18 @@
 }
 
 .navbar {
-  @apply flex-between mb-4 mt-3 py-2 md:max-w-7xl md:w-full px-5 fixed w-full bg-transparent rounded-3xl transition-all z-10
+  @apply flex-between mb-4 mt-3 py-2 w-[1280px] px-5 bg-transparent rounded-3xl transition-all z-10 lg:max-w-7xl text-center fixed border-4
+}
+
+.navbar-new {
+  @apply w-full fixed top-0 left-0 right-0 z-20 bg-transparent transition-all rounded-b-3xl
 }
 
 .navbar-bg {
   @apply bg-white shadow-2xl transition-all
 }
 .blue-btn {
-    @apply rounded-full border border-primary-blue bg-primary-blue py-3 px-7 text-white transition-all hover:bg-transparent hover:text-primary-blue text-center text-lg font-inter items-center justify-center;
+    @apply rounded-full border border-primary-blue bg-primary-blue py-3 px-7 text-white transition-all hover:bg-transparent hover:text-primary-blue text-center text-lg font-inter items-center justify-center hidden md:flex;
   }
 
 .dropdown {

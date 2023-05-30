@@ -22,7 +22,7 @@ const Nav = () => {
     window.addEventListener('scroll', ChangeColor)
 
   return (
-    <div className="bg-primary-blue">
+    // <div className="bg-primary-blue">
 
       <nav className={color ? 'navbar navbar-bg' : 'navbar'}>
           <Link href="/" className="flex gap-2 flex-center">
@@ -46,13 +46,13 @@ const Nav = () => {
               FAQ
               <div className="line group-hover:scale-100" />
             </Link>
-            <button type="button" className="blue-btn">
+            <Link className="blue-btn" href="/login">
               Login
-            </button>
+            </Link>
           </div>
 
           {/* mobile */}
-          <div className="md:hidden flex relative flex-center">
+          <div className="md:hidden flex relative flex-center ">
             <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const Nav = () => {
             </div>
           </div>
       </nav>
-    </div>
+    // </div>
   );
 };
 
