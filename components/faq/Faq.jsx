@@ -33,7 +33,7 @@ export default function Faq() {
   return (
     <div>
         <h1 className='txt-blue text-center pt-[48px]'>Ini beberapa pertanyaan umum yang sering ditanyakan (FAQ).</h1>
-        <div className='pb-16'>
+        <div className='pb-20'>
           {accordionData.map((data, index) => {
             return (
               <AccordionItem 

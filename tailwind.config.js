@@ -32,6 +32,7 @@ module.exports = {
         'secondary-blue' : '#E8F1F1',
         'cirlce-border' : '#87AB87',
         'tertiary-bg-blue' : '#EFF5F5',
+        
       }
     },
   },

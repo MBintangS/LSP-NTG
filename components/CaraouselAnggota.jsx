@@ -3,7 +3,27 @@ import CardCarousel from './CardCarousel'
 
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+    ><IoIosArrowForward style={{ ...style, color: "#008797", fontSize: "30px", }} /></div>
+  );
+}
+
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+    ><IoIosArrowBack style={{ ...style, color: "#008797", fontSize: "30px", }} /></div>
+  );
+}
 
 export const CaraouselAnggota = () => {
   // return (
@@ -18,13 +38,15 @@ export const CaraouselAnggota = () => {
       className: "center",
       infinite: true,
       centerPadding: "60px",
-      slidesToShow: 4,
+      slidesToShow: 3,
       swipeToSlide: true,
       dots: true,
       autoplay: true,
       autoplaySpeed: 3500,
       speed: 750,
       cssEase: "linear",
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
       responsive: [
         {
           breakpoint: 1024,
@@ -58,9 +80,8 @@ export const CaraouselAnggota = () => {
       }
     };
     return (
-      <div className='pb-6'>
+      <div className='pb-6 lg:w-[1024px] mx-auto '>
         <Slider {...settings}>
-          <CardCarousel />
           <CardCarousel />
           <CardCarousel />
           <CardCarousel />

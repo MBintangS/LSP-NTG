@@ -137,6 +137,25 @@ const Home = () => {
 
       {/* FAQ End */}
 
+      {/* Sejarah Kami Start */}
+
+      <div className="grid grid-cols-2">
+          <Image
+            src="/assets/images/sejarah.png"
+            alt="Sejarah LSP"
+            width={720}
+            height={512}
+            className="m-auto rounded-3xl lg:-mx-4 mx-auto"
+          />
+        <div className="">
+          <h1 className="txt-blue">Sejarah Kami</h1>
+          <p className="text-justify mx-6 mb-3">Dr. AM. Kadarman SJ, Ketua Jurusan Ekonomi IKIP Sanata Dharma Yogyakarta, memiliki gagasan mendirikan sekolah bisnis seperti Harvard Business School di Indonesia setelah lawatannya ke Eropa. Ia bertemu dengan Mr. FG. Hendricks dan bersama-sama mencari dukungan dari beberapa pengusaha, termasuk pengusaha dari pabrik mobil DAF, dan pejabat Direktorat Kerjasama Teknik Internasional dari Departe­men Luar Negeri Belanda. Pada prinsipnya, pengusaha dan Pemerintah Belanda bersedia memberikan subsidi dengan syarat di Indonesia terdapat badan representatif untuk menampung pelaksanaan gagasan tersebut. Situasi politik di Indonesia saat itu masih mengkhawatirkan, sehingga badan yang akan dibangun harus meredam kerawanan dan konflik yang mungkin akan muncul. Akhirnya, gagasan tersebut mewujud menjadi PPM Manajemen.</p>
+          <Link href="/"><p className="flex justify-end mx-6 items-center text-primary-blue hover:underline">Ketahui lebih tentang kami &nbsp;<AiOutlineArrowRight /> </p></Link>
+        </div>
+      </div>
+
+      {/* Sejarah Kami End */}
+
     </section>
   );
 };
